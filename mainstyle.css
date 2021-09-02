@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+}
+.main{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('dUyCkp.jpg') no-repeat center center/cover;
+}
+
+.black{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+h1{
+    z-index: 2;
+    color: white;
+}
+
+#logo{
+    position: relative;
+    z-index: 5;
+    transition: .6s ease-in-out;
+}
+
+#logo:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+}
+
+
+
+#logo::after{
+    display: block;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: red;
+    transition: 1s ease-in-out;
+}
+
+#logo:hover::after{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    margin: 20px;
+    height: 10%;
+    width: 100%;
+    flex-direction: row;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.Content1{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    transition: 1s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: White;
+}
+
+.text1{
+    
+    padding: 20px;
+    width: 600px;
+    transition: 1s ease-in-out;
+}
+
+.text1:hover{
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.2);
+}
+
+.text1:hover .main{
+    background: black;
+}
+
+h2{
+    font-size: 30px;
+}
+
+#email{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    outline: hidden;
+}
+
+#email:focus{
+    outline: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+.second-one{
+    height: 100vh;
+    width: 100%;
+}
+
+.first-1{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.img1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 20px;
+}
+
+.text-part-1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.second-2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.img2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    margin: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.img2:hover{
+    filter: brightness(1.2);
+    transform: scale(1.1 );
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.text-part-2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    margin: 20px;
+    padding: 20px;
+}
+

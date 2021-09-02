@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#logo").mouseover(function(){
+                $("header").css("background-color", "black");
+            });
+            $("#logo").mouseout(function(){
+                $("header").css("background", "transparent");
+            });
+
+            $(".text1").mouseover(function(){
+                $(".Content1").css("background", "white");
+                $("#logo").css("opacity", "0");
+            });
+             
+            $(".text1").mouseout(function(){
+                $(".Content1").css("background", "transparent");
+                $("#logo").css("opacity", "1");
+
+            });
+            
+
+
+        });
+
+    </script>
+</head>
+<body>
+    <section class="main">
+        <!-- Creating a black overlay -->
+        
+        <div class="black"></div>
+        
+        <!-- Header top -->
+
+        <header>
+            <div id="logo">
+                <img src="Netflix_Logo_RGB.png" alt="Netflix India" height="70" width="220">
+            </div>
+        </header>
+        
+        <!-- Mid section of top page -->
+
+        <div class="Content1">
+            <span class="text1">
+                 <h2>Unlimited movies, TV shows and more.</h2><br>
+                 Watch anywhere. Cancel anytime. 
+                    Ready to watch? Enter your email to create or restart your membership.
+
+                    <form>
+                        <input type="text" placeholder="Email address" id="email"> <button class="next"> >> </button>
+                    </form>
+            </span>
+        </div>
+
+    </section> 
+
+     <!-- Second section -->
+
+     <section class="second-one">
+        
+        <div class="first-1">
+
+            <div class="img1">
+                    <img src="device-pile-in.png" alt="" height="400" width="500">
+            </div>
+
+            <div class="text-part-1">
+                <h1>Enjoy on your TV.</h1>
+                 <p> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+                
+            </div>
+
+        </div>
+
+        <div class="second-2">
+
+            
+
+            <div class="text-part-2">
+                <h1>Create profiles for children.</h1>
+                 <p> 
+                    Send children on adventures with their favourite characters in a space made just for them—free with your membership. </p>
+                
+            </div>
+
+            <div class="img2">
+                <img src="AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png" alt="" height="400" width="500">
+        </div>
+
+        </div>
+
+     </section>
+
+</body>
+</html>
